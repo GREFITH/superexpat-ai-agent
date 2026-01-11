@@ -24,7 +24,7 @@ def parse_date_string(date_str):
         year, month, day = yyyy_mm_dd.groups()
         parsed_year = int(year)
         
-        # FIX: If year is 2027+, it's likely wrong - use 2025 or 2026
+      
         if parsed_year > 2026:
             parsed_year = current_year if int(month) >= current_date.month else current_year + 1
         
@@ -37,7 +37,7 @@ def parse_date_string(date_str):
         day, month, year = date_with_year.groups()
         parsed_year = int(year)
         
-        # FIX: If year is 2027+, use current or next year
+        
         if parsed_year > 2026:
             parsed_year = current_year
         
@@ -56,7 +56,7 @@ def parse_date_string(date_str):
             date_obj = datetime.strptime(f"{day} {month} {current_year}", "%d %b %Y")
             parsed_date = date_obj.strftime("%Y-%m-%d")
             
-            # If past, use next year (but max 2026)
+       
             if parsed_date < current_date.strftime("%Y-%m-%d"):
                 next_year = min(current_year + 1, 2026)
                 date_obj = date_obj.replace(year=next_year)
@@ -76,7 +76,7 @@ def fetch_eventbrite_events(topic: str, location: str):
     """
     
     if not settings.eventbrite_api_key or "your_" in settings.eventbrite_api_key.lower():
-        print("⚠️ Eventbrite: API key not configured")
+        print(" Eventbrite: API key not configured")
         return []
     
     try:
@@ -101,19 +101,19 @@ def fetch_eventbrite_events(topic: str, location: str):
         print(f"   Status: {r.status_code}")
         
         if r.status_code == 401:
-            print(f"❌ Eventbrite: Invalid API key")
+            print(f" Eventbrite: Invalid API key")
             print(f"   Get new key: https://www.eventbrite.com/account-settings/apps")
             return []
         
         if r.status_code != 200:
-            print(f"⚠️ Eventbrite: HTTP {r.status_code}")
+            print(f" Eventbrite: HTTP {r.status_code}")
             return []
         
         data = r.json()
         events_list = data.get("events", [])
         
         if not events_list:
-            print(f"⚠️ Eventbrite: No events returned")
+            print(f" Eventbrite: No events returned")
             print(f"   Try in browser: {url}?q={topic}&location.address={location}")
             return []
         
@@ -151,11 +151,11 @@ def fetch_eventbrite_events(topic: str, location: str):
                 "description": e.get("description", {}).get("text", "")[:200] if e.get("description") else None
             })
         
-        print(f"✅ Eventbrite: Found {len(events)} events")
+        print(f" Eventbrite: Found {len(events)} events")
         return events
         
     except Exception as e:
-        print(f"⚠️ Eventbrite exception: {e}")
+        print(f" Eventbrite exception: {e}")
         return []
 
 
@@ -165,7 +165,7 @@ def fetch_serpapi_results(query: str, location: str, mode="events"):
     """
     
     if not settings.serpapi_key or "your_" in settings.serpapi_key.lower():
-        print("⚠️ SerpAPI: API key not configured")
+        print(" SerpAPI: API key not configured")
         return []
     
     try:
@@ -184,7 +184,7 @@ def fetch_serpapi_results(query: str, location: str, mode="events"):
         r = requests.get("https://serpapi.com/search", params=params, timeout=15)
         
         if r.status_code != 200:
-            print(f"⚠️ SerpAPI Error: {r.status_code}")
+            print(f" SerpAPI Error: {r.status_code}")
             return []
         
         data = r.json()
@@ -254,9 +254,9 @@ def fetch_serpapi_results(query: str, location: str, mode="events"):
                 "description": item.get("description") if mode == "jobs" else None
             })
         
-        print(f"✅ SerpAPI ({mode}): Found {len(results)} results")
+        print(f" SerpAPI ({mode}): Found {len(results)} results")
         return results
         
     except Exception as e:
-        print(f"⚠️ SerpAPI Exception: {e}")
+        print(f" SerpAPI Exception: {e}")
         return []
