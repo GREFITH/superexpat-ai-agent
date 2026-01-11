@@ -3,7 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.models import ChatRequest, ChatResponse
 from app.rag import handle_query
 import time
-
+import os
+PORT = int(os.environ.get("PORT", 8000))
 app = FastAPI(title="SuperExpat AI Agent API", version="1.0.0")
 
 # ======================
