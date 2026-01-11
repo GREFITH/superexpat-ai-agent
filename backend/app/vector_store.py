@@ -89,5 +89,5 @@ class VectorStore:
         return response
 
 
-# ✅ SINGLETON INSTANCE (CRITICAL)
+#  SINGLETON INSTANCE (CRITICAL)
 vector_store = VectorStore()
