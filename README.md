@@ -402,7 +402,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- **Grefith Gohel** - *Initial work* - [YourGitHub](https://github.com/GREFITH)
 
 ---
 
@@ -418,9 +418,9 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 ## 📞 Support
 
-For support, email: your.email@example.com
+For support, email: grefithgohel90@gmail.com
 
-Or open an issue: [GitHub Issues](https://github.com/YOUR_USERNAME/superexpat-ai-agent/issues)
+Or open an issue: [GitHub Issues](https://github.com/GREFITH/superexpat-ai-agent/issues)
 
 ---
 
