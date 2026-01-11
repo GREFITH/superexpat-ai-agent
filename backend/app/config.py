@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     port: int = 8000
     environment: str = "development"
 
-    # === Vector DB (optional / future) ===
+    # === Vector DB ===
     vector_db_path: str = "./data/chroma_db"
     collection_name: str = "superexpat_knowledge"
     embedding_model: str = "all-MiniLM-L6-v2"
