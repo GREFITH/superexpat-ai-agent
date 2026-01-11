@@ -12,13 +12,13 @@ try:
     if settings.gemini_api_key and "your_" not in settings.gemini_api_key.lower():
         genai.configure(api_key=settings.gemini_api_key)
         gemini_model = genai.GenerativeModel(settings.gemini_model)
-        print("✅ Gemini AI initialized successfully")
+        print(" Gemini AI initialized successfully")
     else:
         gemini_model = None
-        print("⚠️ Gemini API key not configured - AI summaries disabled")
+        print(" Gemini API key not configured - AI summaries disabled")
 except Exception as e:
     gemini_model = None
-    print(f"⚠️ Gemini initialization failed: {e}")
+    print(f" Gemini initialization failed: {e}")
 
 
 def remove_duplicates(results):
@@ -120,7 +120,7 @@ Write a warm, helpful 2-3 sentence summary that:
 
 Be conversational and enthusiastic but concise. Don't repeat the full event list."""
 
-        else:  # jobs
+        else:  
             prompt = f"""You are a career advisor assistant. Generate a brief, professional 2-3 sentence summary for the user.
 
 User is searching for: "{query}" in {location}
@@ -144,11 +144,11 @@ Be professional yet warm. Don't repeat the full job list."""
         if len(ai_text) > 500:
             ai_text = ai_text[:497] + "..."
         
-        print(f"✅ AI Summary generated: {ai_text[:100]}...")
+        print(f" AI Summary generated: {ai_text[:100]}...")
         return ai_text
         
     except Exception as e:
-        print(f"⚠️ Gemini AI error: {e}")
+        print(f" Gemini AI error: {e}")
         # Fallback
         if intent == "event":
             return f"🎉 Found {total_results} exciting events in {location}! Check out the listings below."
@@ -165,7 +165,7 @@ def handle_query(query: str, page: int = 1, page_size: int = 10):
     topic = sanitize_query(query, location)
 
     print(f"\n{'='*60}")
-    print(f"🤖 RAG Processing with Gemini AI")
+    print(f" RAG Processing with Gemini AI")
     print(f"{'='*60}")
     print(f"Intent: {intent}")
     print(f"Location: {location}")
@@ -176,28 +176,28 @@ def handle_query(query: str, page: int = 1, page_size: int = 10):
 
     # Fetch results based on intent
     if intent == "event":
-        print("🔎 Fetching from Eventbrite...")
+        print(" Fetching from Eventbrite...")
         eventbrite_results = fetch_eventbrite_events(topic, location)
         
-        print("🔎 Fetching from Google Events (SerpAPI)...")
+        print(" Fetching from Google Events (SerpAPI)...")
         serpapi_results = fetch_serpapi_results(topic, location, mode="events")
         
         # Combine sources
         results = eventbrite_results + serpapi_results
-        print(f"\n📊 Combined: {len(results)} total events")
+        print(f"\n Combined: {len(results)} total events")
         
         # Apply filters
-        print(f"\n🔧 Filtering events...")
+        print(f"\n Filtering events...")
         results = filter_valid_events(results)
         print(f"✓ After filtering: {len(results)} valid events")
         
         # Remove duplicates
-        print(f"\n🔧 Removing duplicates...")
+        print(f"\n Removing duplicates...")
         results = remove_duplicates(results)
         print(f"✓ After deduplication: {len(results)} unique events")
 
     elif intent == "job":
-        print("🔎 Fetching jobs from SerpAPI...")
+        print(" Fetching jobs from SerpAPI...")
         results = fetch_serpapi_results(topic, location, mode="jobs")
 
     # Sort by date (earliest first)
@@ -212,7 +212,7 @@ def handle_query(query: str, page: int = 1, page_size: int = 10):
     total = len(results)
 
     # Generate AI summary with RAG
-    print(f"\n🤖 Generating AI summary with RAG...")
+    print(f"\n Generating AI summary with RAG...")
     ai_summary = generate_ai_summary(query, location, total, results, intent)
 
     # Pagination
@@ -221,7 +221,7 @@ def handle_query(query: str, page: int = 1, page_size: int = 10):
     paginated_results = results[start:end]
 
     print(f"\n{'='*60}")
-    print(f"✅ RAG Processing Complete")
+    print(f" RAG Processing Complete")
     print(f"{'='*60}")
     print(f"Total results: {total}")
     print(f"AI Summary: {ai_summary[:80]}...")
@@ -234,7 +234,7 @@ def handle_query(query: str, page: int = 1, page_size: int = 10):
         "location": location,
         "total_results": total,
         "results": paginated_results,
-        "ai_summary": ai_summary,  # ✅ AI-generated summary
+        "ai_summary": ai_summary, 
         "pagination": {
             "page": page,
             "page_size": page_size,
