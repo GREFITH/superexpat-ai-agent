@@ -1,0 +1,16 @@
+# PYTHON 3.13 COMPATIBLE - NO RUST COMPILATION NEEDED
+# Updated dependencies that work with Python 3.13
+pydantic-settings>=2.2.0
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-dotenv==1.0.0
+google-generativeai==0.8.3
+sentence-transformers==3.3.1
+chromadb==0.5.23
+numpy==2.2.1
+python-multipart==0.0.12
+httpx==0.28.1
+aiofiles==24.1.0
+
+# Note: Using newer versions that support Python 3.13
+# These don't require Rust compilation

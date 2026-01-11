@@ -1,0 +1,112 @@
+{
+  "documents": [
+    {
+      "id": 1,
+      "content": "SuperExpat helps expats find housing, jobs, and connect with local communities. We support visa assistance, relocation services, language exchange, and cultural integration programs. Our platform connects you with verified landlords, employers, and fellow expats in over 50 countries worldwide.",
+      "category": "services",
+      "metadata": {
+        "tags": ["housing", "jobs", "visa", "relocation", "community"],
+        "priority": "high"
+      }
+    },
+    {
+      "id": 2,
+      "content": "Our platform offers comprehensive safety features including verified user profiles, secure messaging with end-to-end encryption, 24/7 emergency support hotline (+1-800-EXPAT-911), and AI-powered scam detection. All users go through identity verification using government-issued ID, and we have a dedicated trust and safety team monitoring the platform around the clock.",
+      "category": "safety",
+      "metadata": {
+        "tags": ["safety", "security", "verification", "support", "encryption"],
+        "priority": "critical"
+      }
+    },
+    {
+      "id": 3,
+      "content": "Events and meetups are posted weekly across all major cities in our network. You can filter by city, interests, language, date, and event type. Categories include: networking events, sports and fitness, cultural activities, language exchange meetups, professional development workshops, and social gatherings. RSVP directly through the app and receive automatic reminders 24 hours before the event. All events are moderated for safety and quality.",
+      "category": "events",
+      "metadata": {
+        "tags": ["events", "meetups", "social", "networking", "community"],
+        "priority": "medium"
+      }
+    },
+    {
+      "id": 4,
+      "content": "Job listings include full-time positions, part-time work, freelance opportunities, and remote jobs from verified employers worldwide. All companies posting jobs are verified businesses with valid registration. You can apply directly with your SuperExpat profile, which showcases your work authorization status, skills, experience, and language abilities. We offer additional services including resume review, interview preparation coaching, salary negotiation guidance, and work permit assistance.",
+      "category": "jobs",
+      "metadata": {
+        "tags": ["employment", "careers", "work", "jobs", "freelance", "remote"],
+        "priority": "high"
+      }
+    },
+    {
+      "id": 5,
+      "content": "To report abuse, scams, harassment, or safety concerns: Click the three-dot menu on any profile, message, or post and select 'Report'. Choose the category (spam, scam, harassment, inappropriate content, safety concern, or other). Provide details about the incident. Our trust and safety team reviews all reports within 24 hours. For urgent safety issues requiring immediate attention, contact our 24/7 emergency hotline. We take all reports seriously, maintain strict confidentiality, and may share information with law enforcement when necessary for user safety.",
+      "category": "moderation",
+      "metadata": {
+        "tags": ["report", "abuse", "moderation", "safety", "harassment"],
+        "priority": "critical"
+      }
+    },
+    {
+      "id": 6,
+      "content": "Visa and immigration support includes comprehensive guides for work permits, student visas, family reunification visas, tourist visas, and permanent residency applications. We partner with licensed immigration lawyers and certified consultants in multiple countries. Our community forum features visa experience threads where users share their application journeys for different countries. Access country-specific checklists, document requirements, processing timelines, and fee information. Important: We provide general information and community support only, not legal advice. Consult with a licensed immigration attorney for your specific situation.",
+      "category": "visa",
+      "metadata": {
+        "tags": ["visa", "immigration", "permits", "relocation", "legal"],
+        "priority": "high"
+      }
+    },
+    {
+      "id": 7,
+      "content": "Housing assistance covers apartment search, roommate matching, short-term accommodations (hotels, Airbnb alternatives, serviced apartments), and comprehensive neighborhood guides with safety ratings, amenities, and expat reviews. All landlords and property managers are identity-verified. We provide rental agreement templates reviewed by local attorneys, moving checklists, utility setup guides, and furniture rental options. Our premium concierge service can assist with in-person viewings, lease negotiations, deposit handling, and moving coordination.",
+      "category": "housing",
+      "metadata": {
+        "tags": ["housing", "apartments", "accommodation", "rent", "roommates"],
+        "priority": "high"
+      }
+    },
+    {
+      "id": 8,
+      "content": "Premium membership benefits include: unlimited messaging (free users limited to 10/day), priority customer support with 2-hour response time, featured profile visibility appearing first in searches, advanced job alerts with custom filters, exclusive networking events and webinars, personalized relocation assistance with dedicated coordinator, and ad-free experience. Pricing: Monthly subscription $19.99/month, Annual subscription $179.99/year (save 25%, equivalent to $14.99/month). Students receive 50% discount with valid student ID or .edu email. 7-day free trial available for new users.",
+      "category": "premium",
+      "metadata": {
+        "tags": ["premium", "subscription", "membership", "pricing", "benefits"],
+        "priority": "medium"
+      }
+    },
+    {
+      "id": 9,
+      "content": "Language exchange program connects you with native speakers for mutual language learning. Create a profile listing languages you speak fluently and languages you want to learn. Match with partners based on complementary language goals, schedule, and interests. Options include: text chat, video calls, in-person meetups at public locations, and group language tables. Access free learning resources, conversation starter guides, and progress tracking tools. Safety tip: Always meet in public places for first meetings.",
+      "category": "language",
+      "metadata": {
+        "tags": ["language", "learning", "exchange", "education", "social"],
+        "priority": "medium"
+      }
+    },
+    {
+      "id": 10,
+      "content": "Account security best practices: Use a strong unique password (minimum 12 characters, mix of letters, numbers, symbols). Enable two-factor authentication (2FA) via SMS or authenticator app. Never share your password or 2FA codes. Verify the official SuperExpat domain before logging in. Report suspicious login attempts immediately. Regularly review active sessions in Account Settings. We will NEVER ask for your password via email, chat, or phone. Be cautious of phishing attempts impersonating SuperExpat support. Contact security@superexpat.com to report security concerns.",
+      "category": "security",
+      "metadata": {
+        "tags": ["security", "account", "password", "2fa", "privacy"],
+        "priority": "critical"
+      }
+    },
+    {
+      "id": 11,
+      "content": "Financial scam prevention: Be extremely cautious of requests for money transfers, especially Western Union, MoneyGram, cryptocurrency, or gift cards. Never send money to someone you haven't met in person. Rental scams: Legitimate landlords don't require payment before viewing. Job scams: Real employers don't ask you to pay for training or supplies upfront. Romance scams: Be wary of quick declarations of love and requests for financial help. Report any suspicious financial requests immediately. SuperExpat is not responsible for transactions between users. When in doubt, consult with our trust team before proceeding.",
+      "category": "scam_prevention",
+      "metadata": {
+        "tags": ["scams", "fraud", "safety", "money", "prevention"],
+        "priority": "critical"
+      }
+    },
+    {
+      "id": 12,
+      "content": "Healthcare and insurance guidance for expats: Research local healthcare system (public vs private) in your destination country. International health insurance providers we recommend: Cigna Global, Allianz Care, IMG Global. Coverage considerations: emergency medical, routine care, dental, vision, maternity, pre-existing conditions, medical evacuation. EU citizens: Apply for European Health Insurance Card (EHIC) for coverage in EU countries. Find English-speaking doctors through our provider directory. Emergency numbers vary by country - save local emergency contacts immediately upon arrival. Our community forum has healthcare experience threads for each country.",
+      "category": "healthcare",
+      "metadata": {
+        "tags": ["healthcare", "insurance", "medical", "expat", "emergency"],
+        "priority": "high"
+      }
+    }
+  ]
+}
