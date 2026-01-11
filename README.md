@@ -321,15 +321,20 @@ vercel --prod
 ## 📸 Screenshots
 
 ### Home Screen
-![Home](docs/screenshots/home.png)
+![Home](docs/screenshots/home.png)<img width="1915" height="1032" alt="Screenshot 2026-01-12 035247" src="https://github.com/user-attachments/assets/19269a9c-b41b-4fbd-a4b4-2c5674bd9bcb" />
+
 *Clean welcome screen with quick action buttons*
 
 ### Search Results
-![Results](docs/screenshots/results.png)
+![Results](docs/screenshots/results.png)<img width="1915" height="1034" alt="Screenshot 2026-01-12 035300" src="https://github.com/user-attachments/assets/eb702da0-b8a1-4123-838a-df2b7d53407c" /><img width="1919" height="1035" alt="Screenshot 2026-01-12 035315" src="https://github.com/user-attachments/assets/9bb7f280-71ad-4efd-b928-4558d2c0bedd" /><img width="1914" height="1027" alt="Screenshot 2026-01-12 035327" src="https://github.com/user-attachments/assets/20daa452-aa55-4204-9bc3-aee35ed6c10a" />
+
+
+
 *AI-generated summary with event cards in responsive grid*
 
 ### Event Details
-![Details](docs/screenshots/details.png)
+![Details](docs/screenshots/details.png)<img width="1919" height="1034" alt="Screenshot 2026-01-12 035339" src="https://github.com/user-attachments/assets/c0775cdd-7edc-41d9-adb9-3c5a7de662eb" />
+
 *Detailed event information with booking links*
 
 ---
